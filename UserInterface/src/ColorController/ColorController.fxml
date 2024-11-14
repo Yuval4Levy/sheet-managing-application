@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ColorPicker?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+<?import javafx.geometry.Insets?>
+
+<VBox fx:controller="ColorController.ColorController" xmlns:fx="http://javafx.com/fxml" spacing="10">
+    <padding>
+        <Insets top="10" right="10" bottom="10" left="10"/>
+    </padding>
+    <Text text="Text Color:"/>
+    <ColorPicker fx:id="textColorPicker"/>
+    <Text text="Background Color:"/>
+    <ColorPicker fx:id="backgroundColorPicker"/>
+    <!-- Revert Colors Button -->
+    <Button text="Revert Colors" onAction="#handleRevertButton" fx:id="revertButton"/>
+</VBox>

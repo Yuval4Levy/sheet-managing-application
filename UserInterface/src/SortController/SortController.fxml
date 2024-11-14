@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox fx:id="sortVBox" spacing="10" alignment="CENTER" xmlns:fx="http://javafx.com/fxml/1" fx:controller="SortController.SortController">
+    <Label text="Enter Range to Sort (e.g., A1:C10)"/>
+    <TextField fx:id="startRangeField" promptText="Start Cell (e.g., A1)"/>
+    <TextField fx:id="endRangeField" promptText="End Cell (e.g., C10)"/>
+    <Label text="Enter Columns to Sort By (e.g., A,B,C)"/>
+    <TextField fx:id="columnsField" promptText="Columns (e.g., A,B,C)"/>
+    <Button text="Sort" onAction="#handleSortButtonAction"/>
+</VBox>

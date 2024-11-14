@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox fx:id="sortVBox" spacing="10" alignment="CENTER" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FilterController.FilterController">
+    <Label text="Select column to filter"/>
+    <ComboBox fx:id="columnComboBox" promptText="Select Column"/>
+    <TextField fx:id="cellInputField" promptText="Enter cells to filter by seperated by comma (e.g., A1, B2, C3)"/>
+    <Button text="Filter" onAction="#handleFilterButtonAction"/>
+</VBox>

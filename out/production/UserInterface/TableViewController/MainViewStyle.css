@@ -1,0 +1,34 @@
+.table-view {
+    -fx-table-cell-border-color: transparent; /* Hide grid lines if desired */
+}
+
+.table-view .table-cell {
+    -fx-padding: 0.5em; /* Add padding to cells */
+}
+
+.cell-lightgreen {
+    -fx-background-color: lightgreen;
+}
+
+.cell-lightblue {
+    -fx-background-color: lightblue;
+}
+
+.table-row-cell:selected {
+    -fx-background-color: #0096C9; /* A distinct selection color */
+    -fx-background-insets: 0, 0, 1, 0; /* Insets for selection bar */
+}
+
+.table-row-cell:selected .table-cell {
+    -fx-background-color: #0096C9; /* Same distinct selection color for cells */
+    -fx-text-fill: white; /* Text color for selected cells */
+}
+
+/* If you want to handle highlighted cells that are also selected */
+.table-row-cell:selected.cell-lightgreen .table-cell {
+    -fx-background-color: derive(lightgreen, -20%);
+}
+
+.table-row-cell:selected.cell-lightblue .table-cell {
+    -fx-background-color: derive(lightblue, -20%);
+}

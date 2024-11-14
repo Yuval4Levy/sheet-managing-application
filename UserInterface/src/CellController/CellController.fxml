@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns:fx="http://javafx.com/fxml/1" fx:controller="CellController.CellController" spacing="10" alignment="CENTER">
+
+    <HBox spacing="10" alignment="CENTER_LEFT">
+        <Label text="Cell ID:"/>
+        <TextField fx:id="cellIdField" editable="false" prefWidth="100"/>
+
+        <Label text="Original Value:"/>
+        <TextField fx:id="originalValueField" prefWidth="100"/>
+
+        <Label text="Effective Value:"/>
+        <TextField fx:id="effectiveValueField" editable="false" prefWidth="100"/>
+
+        <Label text="Version:"/>
+        <TextField fx:id="cellVersionField" editable="false" prefWidth="100"/>
+
+        <Button fx:id="updateValueButton" text="Update Value" onAction="#handleUpdateValue"/>
+    </HBox>
+
+</VBox>

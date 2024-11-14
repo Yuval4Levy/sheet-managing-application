@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressIndicator?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox xmlns:fx="http://javafx.com/fxml" fx:controller="LoadingWindowController.LoadingWindowController" spacing="10" alignment="CENTER" style="-fx-padding: 20;">
+    <children>
+        <Label text="Loading, please wait..." style="-fx-font-size: 14px; -fx-font-weight: bold;"/>
+        <ProgressIndicator fx:id="progressIndicator" />
+        <Label fx:id="statusLabel" text="Loading..." />
+    </children>
+</VBox>

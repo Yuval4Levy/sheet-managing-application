@@ -1,0 +1,14 @@
+# Maven target directory
+/target/
+
+# IntelliJ IDEA files
+/.idea/
+/*.iml
+
+# Logs
+*.log
+
+# Dependency JAR files
+/Users/yuvall/Desktop/SheetCellApp_209370378/javafx-sdk-23/lib/
+/Users/yuvall/Desktop/SheetCellApp_209370378/jaxb-ri-4.0.5/mod/
+/Users/yuvall/Desktop/SheetCellApp_209370378/lib/

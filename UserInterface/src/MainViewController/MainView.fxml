@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="MainViewController.MainViewController" prefWidth="800" prefHeight="600">
+    <ScrollPane fitToWidth="true" fitToHeight="true" AnchorPane.bottomAnchor="0" AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0" AnchorPane.topAnchor="0">
+        <GridPane hgap="10" vgap="10" prefWidth="800" prefHeight="600">
+            <!-- Title Label -->
+            <Label fx:id="sheetTitleLabel" style="-fx-font-weight: bold; -fx-font-size: 18px;" text="SheetCell Application" GridPane.columnIndex="0" GridPane.rowIndex="0" GridPane.columnSpan="3"/>
+
+            <!-- File Path and Load Button -->
+            <HBox fx:id="fileLoaderHBox" spacing="10" GridPane.columnIndex="0" GridPane.rowIndex="1" GridPane.columnSpan="3"/>
+
+            <!-- Cell Controller Box -->
+            <HBox fx:id="cellControllerBox" spacing="10" GridPane.columnIndex="0" GridPane.rowIndex="2" GridPane.columnSpan="3"/>
+
+            <VBox fx:id="resizeVBox" spacing="10" GridPane.columnIndex="0" GridPane.rowIndex="4" GridPane.rowSpan="4"/>
+
+            <VBox fx:id="colorControllerBox" GridPane.columnIndex="0" GridPane.rowIndex="8" GridPane.rowSpan="4"/>
+
+            <AnchorPane fx:id="rangeVBox" GridPane.columnIndex="0" GridPane.rowIndex="15" GridPane.columnSpan="2" GridPane.rowSpan="4"/>
+
+            <VBox fx:id="filterVBox" GridPane.columnIndex="0" GridPane.rowIndex="17" GridPane.rowSpan="2"/>
+
+            <VBox fx:id="sortVBox" GridPane.columnIndex="1" GridPane.rowIndex="17" GridPane.rowSpan="2"/>
+
+            <AnchorPane fx:id="tableView" GridPane.columnIndex="1" GridPane.rowIndex="4" GridPane.rowSpan="12" GridPane.columnSpan="2">
+            </AnchorPane>
+
+            <VBox fx:id="versionSelectorBox" GridPane.columnIndex="2" GridPane.rowIndex="0" GridPane.rowSpan="2"/>
+
+            <columnConstraints>
+                <ColumnConstraints minWidth="200" prefWidth="200" hgrow="SOMETIMES"/>
+                <ColumnConstraints minWidth="400" hgrow="ALWAYS"/>
+                <ColumnConstraints minWidth="200" hgrow="SOMETIMES"/>
+            </columnConstraints>
+
+            <rowConstraints>
+                <RowConstraints minHeight="30" vgrow="NEVER"/> <!-- Title row -->
+                <RowConstraints minHeight="30" vgrow="NEVER"/> <!-- File path and load button row -->
+                <RowConstraints minHeight="30" vgrow="NEVER"/> <!-- Cell controller row -->
+                <RowConstraints minHeight="20" vgrow="NEVER"/> <!-- Spacer row -->
+                <RowConstraints minHeight="30" vgrow="SOMETIMES"/> <!-- Resize controls row start -->
+                <RowConstraints minHeight="30" vgrow="SOMETIMES"/> <!-- Resize controls row end -->
+                <RowConstraints minHeight="20" vgrow="NEVER"/> <!-- Spacer row -->
+                <RowConstraints minHeight="30" vgrow="SOMETIMES"/> <!-- Color controller row start -->
+                <RowConstraints minHeight="30" vgrow="SOMETIMES"/> <!-- Color controller row end -->
+                <RowConstraints minHeight="20" vgrow="NEVER"/> <!-- Spacer row -->
+                <RowConstraints minHeight="30" vgrow="SOMETIMES"/> <!-- Range controller row start -->
+                <RowConstraints minHeight="30" vgrow="SOMETIMES"/> <!-- Range controller row end -->
+                <RowConstraints minHeight="20" vgrow="NEVER"/> <!-- Spacer row -->
+                <RowConstraints minHeight="30" vgrow="SOMETIMES"/> <!-- Filter VBox row start -->
+                <RowConstraints minHeight="30" vgrow="SOMETIMES"/> <!-- Filter VBox row end -->
+                <RowConstraints minHeight="20" vgrow="NEVER"/> <!-- Spacer row -->
+                <RowConstraints minHeight="30" vgrow="SOMETIMES"/> <!-- Sort VBox row start -->
+                <RowConstraints minHeight="30" vgrow="SOMETIMES"/> <!-- Sort VBox row end -->
+            </rowConstraints>
+
+        </GridPane>
+    </ScrollPane>
+</AnchorPane>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8"
+      fx:controller="ResizeController.ResizeController" prefWidth="150" spacing="5">
+    <Label text="Select Column:" />
+    <ComboBox fx:id="columnSelectorComboBox" onAction="#handleColumnSelection" prefWidth="140" />
+    <Label text="Alignment:" />
+    <ComboBox fx:id="alignmentComboBox" onAction="#handleAlignmentChange" prefWidth="140" />
+    <Label text="Col Width:" />
+    <Slider fx:id="columnWidthSlider" max="300" min="50" showTickLabels="true" showTickMarks="true" value="100" />
+    <Label text="Row Height:" />
+    <Slider fx:id="rowHeightSlider" max="100" min="20" showTickLabels="true" showTickMarks="true" value="30" />
+</VBox>
